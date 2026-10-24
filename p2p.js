@@ -6,7 +6,7 @@ const server = net.createServer((socket)=>{
     { socket.write(input.toString());
     })
     socket.on('data',(data)=>
-        console.log(data.toString()));
+        console.log("admin: ",data.toString().trim()));
 });
 
 server.listen(5353);
